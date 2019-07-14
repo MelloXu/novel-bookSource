@@ -3,6 +3,14 @@
   "summary": "Provided links and based on github.com",
   "list": [
     {
+      "name": "小説家になろうTest",
+      "url": "https://www.baidu.com",
+      "category": 2,
+      "rank": 0,
+      "auth": false,
+      "version": 100
+    },
+    {
       "name": "小説家になろう",
       "url": "https://syosetu.com",
       "category": 2,

@@ -43,11 +43,6 @@
       }
     ],
     "list": ".ranking_top5box li",
-    "page": {
-      "index": 1,
-      "limit": 30,
-      "begin": "end",
-      "next": "end"
-    }
+   
   }
 }

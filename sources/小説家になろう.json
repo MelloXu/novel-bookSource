@@ -25,7 +25,7 @@
     },
     "chapter": {
       "name": "a",
-      "link": ""
+      "link": "a@attr->href"
     }
   },
   "content": {

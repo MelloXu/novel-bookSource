@@ -29,7 +29,7 @@
     }
   },
   "content": {
-    "text": "div#novel_honbun"
+    "text": ".novel_view"
   },
   "search": {
     "link": "https://yomou.syosetu.com/search.php?word=${key}",

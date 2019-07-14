@@ -3,12 +3,12 @@
   "summary": "Provided links and based on github.com",
   "list": [
     {
-      "name": "小説家になろうTest",
+      "name": "亲小说",
       "url": "https://www.qinxiaoshuo.com",
       "category": 2,
-      "rank": 0,
+      "rank": 2,
       "auth": false,
-      "version": 100
+      "version": 103
     },
     {
       "name": "小説家になろう",

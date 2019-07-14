@@ -1,5 +1,5 @@
 {
-  "name": "亲小说",
+  "name": "此条无视，验证通过用",
   "version": 103,
   "category": 2,
   "url": "https://www.qinxiaoshuo.com",
@@ -32,29 +32,6 @@
     "next": {
       "link": "div.buttons > p > a",
       "text": "下一页"
-    }
-  },
-  "search": {
-    "link": "https://www.qinxiaoshuo.com/search/?keyword=${key}",
-    "list": "div.book_item"
-  },
-  "rank": {
-    "link": [
-      {
-        "name": "日轻",
-        "link": "https://www.qinxiaoshuo.com/tag/日轻"
-      },
-      {
-        "name": "科幻",
-        "link": "https://www.qinxiaoshuo.com/tag/科幻"
-      }
-    ],
-    "list": "div.book_item",
-    "page": {
-      "index": 1,
-      "limit": 16,
-      "begin": "",
-      "next": "/${index}.html"
     }
   }
 }

@@ -3,10 +3,10 @@
   "summary": "Provided links and based on github.com",
   "list": [
     {
-      "name": "此条无视，验证通过用",
+      "name": "ceshi",
       "url": "https://www.qinxiaoshuo.com",
       "category": 2,
-      "rank": 2,
+      "rank": 0,
       "auth": false,
       "version": 103
     },

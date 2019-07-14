@@ -1,0 +1,57 @@
+{
+  "name": "小説家になろう",
+  "version": 101,
+  "category": 0,
+  "url": "https://syosetu.com",
+  "charset": "utf-8",
+  "metadata": {
+    "name": ["a.tl"],
+    "author": [".searchkekka_box a:nth-child(2)", ".novel_writername"],
+    "cover": [".p-header__logo img"],
+    "summary": [".ex","#novel_ex"],
+    "category": ["td a:nth-child(2)"],
+    "status": ["td.left"],
+    "update": [".searchkekka_box.textNodes[1]",".long_update"],
+    "lastChapter": [".book_info > .upd > a"],
+    "link": ["a.tl@attr->href"],
+    "catalog": []
+  },
+  "catalog": {
+    "list": ".index_box",
+    "orderBy": 0,
+    "booklet": {
+      "name": ".chapter_title",
+      "list": ".subtitle > a"
+    },
+    "chapter": {
+      "name": "a",
+      "link": "https://ncode.syosetu.com + a@attr->href"
+    }
+  },
+  "content": {
+    "text": "div#novel_honbun"
+  },
+  "search": {
+    "link": "https://yomou.syosetu.com/search.php?word=${key}",
+    "list": ".searchkekka_box"
+  },
+  "rank": {
+    "link": [
+      {
+        "name": "类别排行",
+        "link": "https://yomou.syosetu.com/rank/genretop/"
+      },
+      {
+        "name": "总排行",
+        "link": "https://yomou.syosetu.com/rank/top/"
+      }
+    ],
+    "list": ".c-trad-contents .genreranking_topbox li",
+    "page": {
+      "index": 1,
+      "limit": 30,
+      "begin": "",
+      "next": "index_${index}.html"
+    }
+  }
+}

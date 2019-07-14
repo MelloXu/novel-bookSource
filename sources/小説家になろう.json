@@ -42,7 +42,7 @@
         "link": "https://yomou.syosetu.com/rank/top/"
       }
     ],
-    "list": ".ranking_top5box li",
+    "list": ".ranking_top5box li"
    
   }
 }

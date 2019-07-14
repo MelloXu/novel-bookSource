@@ -5,8 +5,8 @@
     {
       "name": "小説家になろう",
       "url": "https://syosetu.com",
-      "category": 1,
-      "rank": 0,
+      "category": 2,
+      "rank": 1,
       "auth": false,
       "version": 100
     }

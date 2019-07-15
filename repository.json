@@ -17,14 +17,6 @@
       "rank": 1,
       "auth": false,
       "version": 101
-    },
-    {
-      "name": "小説家になろうR",
-      "url": "https://noc.syosetu.com",
-      "category": 2,
-      "rank": 1,
-      "auth": false,
-      "version": 102
     }
   ]
 }

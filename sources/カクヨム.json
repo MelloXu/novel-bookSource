@@ -50,7 +50,13 @@
         "link": "https://kakuyomu.jp/rankings/all/entire"
       }
     ],
-    "list": ".widget-work"
+    "list": ".widget-work",
+    "page": {
+      "index": 1,
+      "limit": 100,
+      "begin": "",
+      "next": "?page=${index}"
+    }
    
   }
 }

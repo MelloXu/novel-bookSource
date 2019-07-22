@@ -17,6 +17,14 @@
       "rank": 1,
       "auth": false,
       "version": 101
+    },
+    {
+      "name": "カクヨム",
+      "url": "https://kakuyomu.jp",
+      "category": 2,
+      "rank": 3,
+      "auth": false,
+      "version": 100
     }
   ]
 }

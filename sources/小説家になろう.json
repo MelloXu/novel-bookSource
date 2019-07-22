@@ -12,7 +12,6 @@
     "category": ["td a:nth-child(2)"],
     "status": ["td.left"],
     "update": [".searchkekka_box.textNodes[1]",".long_update"],
-    "lastChapter": [".book_info > .upd > a"],
     "link": ["a.tl@attr->href"],
     "catalog": []
   },

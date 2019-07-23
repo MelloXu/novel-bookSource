@@ -11,7 +11,7 @@
     "summary": [".widget-workCard-introduction a"],
     "category": [".widget-workCard-genre a"],
     "status": [".widget-workCard-statusLabel"],
-    "update": ["..widget-workCard-dateUpdated"],
+    "update": [".widget-workCard-dateUpdated"],
     "lastChapter": [".book_info > .upd > a"],
     "link": ["a.widget-workCard-titleLabel@attr->href"],
     "catalog": []

@@ -59,7 +59,7 @@
       "index": 1,
       "limit": 100,
       "begin": "",
-      "next": ["?page=${index}", ".pager-next a@attr->href"]
+      "next": "?page=${index}"
     }
    
   }

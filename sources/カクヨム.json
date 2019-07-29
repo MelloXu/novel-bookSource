@@ -5,9 +5,9 @@
   "url": "https://kakuyomu.jp",
   "charset": "utf-8",
   "metadata": {
-    "name": ["a.widget-workCard-titleLabel",".work-title"],
+    "name": ["a.widget-workCard-titleLabel", ".work-title"],
     "author": ["a.widget-workCard-authorLabel", ".work-author a"],
-    "cover": [".work-thumbnail img@attr->src"],
+    "cover": ["", ".work-thumbnail img@attr->src"],
     "summary": [".widget-workCard-introduction a", ".work-introduction"],
     "category": [".widget-workCard-genre a", ".entry-categories .entry-category-link:nth-child(2)"],
     "status": [".widget-workCard-statusLabel",".widget-toc-workStatus span:nth-child(1)"],

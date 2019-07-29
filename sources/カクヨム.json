@@ -5,15 +5,15 @@
   "url": "https://kakuyomu.jp",
   "charset": "utf-8",
   "metadata": {
-    "name": ["a.widget-workCard-titleLabel"],
-    "author": ["a.widget-workCard-authorLabel"],
-    "cover": [""],
-    "summary": [".widget-workCard-introduction a"],
-    "category": [".widget-workCard-genre a"],
-    "status": [".widget-workCard-statusLabel"],
-    "update": [".widget-workCard-dateUpdated"],
+    "name": ["a.widget-workCard-titleLabel",".work-title"],
+    "author": ["a.widget-workCard-authorLabel", ".work-author a"],
+    "cover": [".work-thumbnail img@attr->src"],
+    "summary": [".widget-workCard-introduction a", ".work-introduction"],
+    "category": [".widget-workCard-genre a", ".entry-categories .entry-category-link:nth-child(2)"],
+    "status": [".widget-workCard-statusLabel",".widget-toc-workStatus span:nth-child(1)"],
+    "update": [".widget-workCard-dateUpdated",".widget-toc-date span"],
     "lastChapter": [".book_info > .upd > a"],
-    "link": ["a.widget-workCard-titleLabel@attr->href"],
+    "link": ["a.widget-workCard-titleLabel@attr->href",".work-main .ui-button-blue"],
     "catalog": []
   },
   "catalog": {
@@ -48,14 +48,18 @@
       {
         "name": "総合累計",
         "link": "https://kakuyomu.jp/rankings/all/entire"
+      },
+      {
+        "name": "書籍化作品",
+        "link": "https://kakuyomu.jp/rankings/all/entire"
       }
     ],
-    "list": ".widget-work",
+    "list": [".widget-work", ".work-main"],
     "page": {
       "index": 1,
       "limit": 100,
       "begin": "",
-      "next": "?page=${index}"
+      "next": ["?page=${index}", ".pager-next a@attr->href"]
     }
    
   }

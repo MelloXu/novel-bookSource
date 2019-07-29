@@ -54,7 +54,7 @@
         "link": "https://kakuyomu.jp/publication"
       }
     ],
-    "list": [".widget-work", ".work-main"],
+    "list": ".widget-work",
     "page": {
       "index": 1,
       "limit": 100,

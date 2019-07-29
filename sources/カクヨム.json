@@ -48,10 +48,6 @@
       {
         "name": "総合累計",
         "link": "https://kakuyomu.jp/rankings/all/entire"
-      },
-      {
-        "name": "書籍化作品",
-        "link": "https://kakuyomu.jp/publication"
       }
     ],
     "list": ".widget-work",

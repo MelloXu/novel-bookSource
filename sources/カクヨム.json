@@ -52,6 +52,38 @@
       {
         "name": "電撃文庫",
         "link": "https://kakuyomu.jp/users/dengekibunko/works"
+      },
+      {
+        "name": "ファンタジア文庫",
+        "link": "https://kakuyomu.jp/users/fantasia/works"
+      },
+      {
+        "name": "メディアワークス文庫",
+        "link": "https://kakuyomu.jp/users/mwbunko/works"
+      },
+      {
+        "name": "ファミ通文庫",
+        "link": "https://kakuyomu.jp/users/famitsu/works"
+      },
+      {
+        "name": "DRAGON NOVELS",
+        "link": "https://kakuyomu.jp/users/dragon-novels/works"
+      },
+      {
+        "name": "MF文庫J編集部",
+        "link": "https://kakuyomu.jp/users/mfbunkoj/works"
+      },
+      {
+        "name": "角川文庫",
+        "link": "https://kakuyomu.jp/users/kadokawa_bunko/works"
+      },
+      {
+        "name": "角川スニーカー文庫",
+        "link": "https://kakuyomu.jp/users/sneaker/works"
+      },
+      {
+        "name": "カドカワBOOKS公式",
+        "link": "https://kakuyomu.jp/users/kadokawabooks/works"
       }
     ],
     "list": ".widget-work",

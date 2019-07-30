@@ -48,6 +48,10 @@
       {
         "name": "総合累計",
         "link": "https://kakuyomu.jp/rankings/all/entire"
+      },
+      {
+        "name": "電撃文庫",
+        "link": "https://kakuyomu.jp/users/dengekibunko/works"
       }
     ],
     "list": ".widget-work",

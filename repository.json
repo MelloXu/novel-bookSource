@@ -25,6 +25,14 @@
       "rank": 12,
       "auth": false,
       "version": 100
+    },
+    {
+      "name": "ノクターンノベルズ",
+      "url": "https://kakuyomu.jp",
+      "category": 2,
+      "rank": 0,
+      "auth": false,
+      "version": 100
     }
   ]
 }

@@ -18,7 +18,7 @@
     "lastChapter": ".index_box > .novel_sublist2:last-child > .subtitle > a"
   },
   "catalog": {
-      "list": ".chapter_title",
+      "list": ".index_box",
       "orderBy": 0,
       "booklet": {
         "name": ".chapter_title",

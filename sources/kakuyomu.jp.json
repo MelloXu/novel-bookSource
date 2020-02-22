@@ -21,7 +21,7 @@
     "update": ".widget-toc-date span"
   },
   "catalog": {
-      "list": ".widget-toc-episode",
+      "list": ".widget-toc-main",
       "orderBy": 0,
       "name": ".widget-toc-episode .widget-toc-episode-titleLabel",
       "chapter": ".widget-toc-episode a"

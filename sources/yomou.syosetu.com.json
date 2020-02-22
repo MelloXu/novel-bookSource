@@ -1,50 +1,59 @@
 {
   "name": "小説家になろう",
-  "url": "https://yomou.syosetu.com",
-  "version": 100,
+  "url": "yomou.syosetu.com",
+  "version": 101,
+  "search": {
+      "url": "https://yomou.syosetu.com/search.php?word=a=${key}",
+      "charset": "utf-8",
+      "list": ".searchkekka_box",
+      "name": ".novel_h > a",
+      "author": ".novel_h > div > a:nth-child(1) ",
+      "detail": ".novel_h > a"
+  },
   "detail": {
-    "name": ["a.tl"],
-    "author": [".searchkekka_box a:nth-child(2)", ".novel_writername", ".name_genre a", ".name a", ".name_genre a:nth-child(1)"],
-    "cover": [".p-header__logo img"],
-    "summary": [".ex","#novel_ex"],
-    "category": ["td a:nth-child(2)"],
-    "status": ["td.left"],
-    "update": [".searchkekka_box.textNodes[1]",".long_update"],
-    "catalog": []
+    "name": ".novel_title",
+    "author": ".novel_writername@match->(?<=作者: )(.+)(?= /)@replace->作者: ",
+    "summary": "#novel_ex",
+    "status": ".info-side > p@match->(?<=\\()(.+)(?=\\))",
+    "lastChapter": ".index_box > .novel_sublist2:last-child > .subtitle > a",
   },
   "catalog": {
-    "list": ".index_box",
-    "orderBy": 0,
-    "booklet": {
-      "name": ".chapter_title",
-      "list": ".subtitle > a"
-    },
-    "name": "a",
-    "chapter": "a@attr->href"
+      "list": ".novel_sublist2",
+      "orderBy": 0,
+      "booklet": {
+        "name": ".chapter_title",
+        "list": ".novel_sublist2"
+     },
+      "name": ".novel_sublist2 .subtitle a",
+      "chapter": ".novel_sublist2 .subtitle a"
   },
   "chapter": {
-    "nacontent": ".novel_view",
-    "filter": ["@a"]
-  },
-  "search": {
-    "url": "https://yomou.syosetu.com/search.php?word=${key}",
-    "charset": "utf-8",
-    "list": ".searchkekka_box",
-    "name": ["a.tl"],
-    "author": [".searchkekka_box a:nth-child(2)", ".novel_writername", ".name_genre a", ".name a", ".name_genre a:nth-child(1)"],
-    "cover": [".p-header__logo img"],
-    "detail": ["a.tl@attr->href"]
+      "content": ".novel_view"
   },
   "rank": [
-    {
-        "title": "ランキング",
-        "url": "https://yomou.syosetu.com/rank/top/",
-        "list": ".ranking_top5box li",
-        "name": ["a.tl"],
-        "author": [".searchkekka_box a:nth-child(2)", ".novel_writername", ".name_genre a", ".name a", ".name_genre a:nth-child(1)"],
-        "cover": [".p-header__logo img"],
-        "summary": [".ex","#novel_ex"],
-        "detail": ["a.tl@attr->href"]
-    }
+      {
+          "title": "総合ランキング",
+          "url": "https://yomou.syosetu.com/rank/list/type/${key}/",
+          "page": 1,
+          "size": 300,
+          "categories": [{"key": "daily_total", "value": "日間ランキングBEST300"}, {"key": "weekly_total", "value": "週間ランキングBEST300"}, {"key": "monthly_total", "value": "月間ランキングBEST300"}, {"key": "quarter_total", "value": "四半期ランキングBEST300"}, {"key": "yearly_total", "value": "年間ランキングBEST300"}, {"key": "total_total", "value": "累計ランキングBEST300"}],
+          "list": ".ranking_list",
+          "name": ".rank_h > a",
+          "author": ".rank_table > a:nth-child(2)",
+          "summary": ".rank_table .ex",
+          "detail": ".rank_h > a"
+      },
+      {
+        "title": "ジャンル別ランキング",
+        "url": "https://yomou.syosetu.com/rank/genrelist/type/${key}/",
+        "page": 1,
+        "size": 100,
+        "categories": [{"key": "yearly_101", "value": "異世界"}, {"key": "yearly_102", "value": "現実世界"}, {"key": "yearly_201", "value": "ハイファンタジー"}, {"key": "yearly_202", "value": "ローファンタジー"}, {"key": "yearly_301","value": "純文学"}, {"key": "yearly_302", "value": "ヒューマンドラマ"}, {"key": "yearly_303", "value": "歴史"}, {"key": "yearly_304", "value": "推理"}, {"key": "yearly_305", "value": "ホラー"},{"key": "yearly_306", "value": "アクション"}, {"key": "yearly_307", "value": "コメディー"}, {"key": "yearly_401", "value": "VRゲーム"}, {"key": "yearly_402", "value": "宇宙"}, {"key": "yearly_403", "value": "空想科学"}, {"key": "yearly_404", "value": "パニック"}, {"key": "yearly_9901", "value": "童話"}, {"key": "yearly_9902", "value": "詩"}, {"key": "yearly_9903", "value": "エッセイ"}, {"key": "yearly_9999", "value": "その他"}],
+        "list": ".ranking_list",
+        "name": ".rank_h > a",
+        "author": ".rank_table > a:nth-child(2)",
+        "summary": ".rank_table .ex",
+        "detail": ".rank_h > a"
+      }
   ]
 }

@@ -14,7 +14,8 @@
   "detail": {
     "name": "#workTitle",
     "author": "#workAuthor-activityName",
-    "summary": "#catchphrase-body"
+    "summary": "#catchphrase-body",
+    "cover": "#coverImage img"
   },
   "catalog": {
       "list": ".widget-toc-episode",

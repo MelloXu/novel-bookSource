@@ -63,7 +63,7 @@
         "list": ".widget-workBox-official",
         "name": ".widget-workBox-official-titleLabel",
         "author": ".widget-workBox-official-author",
-        "cover": ".widget-workBox-official-thumbnail-bannerImage@attr->style@match->(?<=·https)(jpg+)",
+        "cover": ".widget-workBox-official-thumbnail-bannerImage@attr->style@match->(?<=url()(.+)(?=);)",
         "detail": ".widget-workBox-official a",
         "summary": ".widget-workBox-official-catchphrase"
       }

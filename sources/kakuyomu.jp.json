@@ -62,6 +62,16 @@
         "cover": ".widget-workBox-official-thumbnail-coverImage img",
         "detail": ".widget-workBox-official a",
         "summary": ".widget-workBox-official-catchphrase"
+      },
+      {
+        "title": "公式連載",
+        "url": "https://kakuyomu.jp/users/${key}/works",
+        "categories": [{"key": "dengekibunko", "value": "電撃文庫"}, {"key": "mwbunko", "value": "メディアワークス文庫"}, {"key": "kadokawa_bunko", "value": "角川文庫"}, {"key": "mfbunkoj", "value": "MF文庫J編集部"}, {"key": "sneaker","value": "角川スニーカー文庫"}, {"key": "famitsu", "value": "ファミ通文庫"}, {"key": "bslog", "value": "ビーズログ文庫"}, {"key": "beans", "value": "角川ビーンズ文庫"}, {"key": "fantasia", "value": "ファンタジア文庫"},{"key": "dragon-novels", "value": "DRAGON NOVELS"}, {"key": "kadokawabooks", "value": "カドカワBOOKS公式"}, {"key": "lbunko", "value": "富士見L文庫"}, {"key": "hobby", "value": "エンターブレイン　ホビー書籍編集部"}, {"key": "prime-edi", "value": "｢L-エンタメ小説｣／プライム書籍編集部"}, {"key": "dragonbook", "value": "ドラゴンブック編集部"}, {"key": "bun_kado", "value": "文芸カドカワ"}],
+        "list": ".widget-work",
+        "name": ".bookWalker-work-title",
+        "author": ".widget-catchphrase-author-activityName",
+        "detail": ".bookWalker-work-title",
+        "summary": ".widget-workCard-introduction"
       }
   ]
 }

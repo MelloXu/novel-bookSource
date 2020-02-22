@@ -24,7 +24,7 @@
       "list": ".widget-toc-episode",
       "orderBy": 0,
       "name": ".widget-toc-episode .widget-toc-episode-titleLabel",
-      "chapter": ".widget-toc-episode .widget-toc-episode-episodeTitle"
+      "chapter": ".widget-toc-episode a"
   },
   "chapter": {
       "content": ".widget-episode"

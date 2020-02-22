@@ -22,7 +22,7 @@
       "orderBy": 0,
       "booklet": {
         "name": ".chapter_title",
-        "list": ".novel_sublist2"
+        "list": ".chapter_title"
      },
       "name": ".novel_sublist2 .subtitle a",
       "chapter": ".novel_sublist2 .subtitle a"

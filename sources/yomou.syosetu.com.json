@@ -14,7 +14,6 @@
     "name": ".novel_title",
     "author": ".novel_writername@match->(?<=作者: )(.+)(?= /)@replace->作者: ",
     "summary": "#novel_ex",
-    "status": ".info-side > p@match->(?<=\\()(.+)(?=\\))",
     "lastChapter": ".index_box > .novel_sublist2:last-child > .subtitle > a"
   },
   "catalog": {

@@ -1,9 +1,9 @@
 {
   "name": "小説家になろう",
   "url": "yomou.syosetu.com",
-  "version": 101,
+  "version": 100,
   "search": {
-      "url": "https://yomou.syosetu.com/search.php?word=a=${key}",
+      "url": "https://yomou.syosetu.com/search.php?word=${key}",
       "charset": "utf-8",
       "list": ".searchkekka_box",
       "name": ".novel_h > a",

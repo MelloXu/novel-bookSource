@@ -18,11 +18,11 @@
     "lastChapter": ".index_box > .novel_sublist2:last-child > .subtitle > a"
   },
   "catalog": {
-      "list": ".novel_sublist2",
+      "list": ".chapter_title",
       "orderBy": 0,
       "booklet": {
         "name": ".chapter_title",
-        "list": ".chapter_title"
+        "list": ".novel_sublist2"
      },
       "name": ".novel_sublist2 .subtitle a",
       "chapter": ".novel_sublist2 .subtitle a"

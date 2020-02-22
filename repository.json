@@ -1,30 +1,5 @@
-{
-  "name": "ライトノベル",
-  "summary": "Provided links and based on github.com",
-  "list": [
-    {
-      "name": "ceshi",
-      "url": "https://www.qinxiaoshuo.com",
-      "category": 2,
-      "rank": 0,
-      "auth": false,
-      "version": 100
-    },
-    {
-      "name": "小説家になろう",
-      "url": "https://yomou.syosetu.com",
-      "category": 2,
-      "rank": 1,
-      "auth": false,
-      "version": 101
-    },
-    {
-      "name": "カクヨム",
-      "url": "https://kakuyomu.jp",
-      "category": 2,
-      "rank": 12,
-      "auth": false,
-      "version": 100
-    }
-  ]
-}
+[
+    "https://www.qinxiaoshuo.com",
+    "https://yomou.syosetu.com",
+    "https://kakuyomu.jp"
+]

@@ -20,13 +20,12 @@
       "name": ".widget-toc-chapter",
       "list": ".widget-toc-episode"
     },
-    "chapter": {
-      "name": ".widget-toc-episode-titleLabel",
-      "link": ".widget-toc-episode-episodeTitle@attr->href"
-    }
+    "name": ".widget-toc-episode-titleLabel",
+    "chapter": ".widget-toc-episode-episodeTitle@attr->href"
   },
-  "content": {
-    "text": ".widget-episodeBody"
+  "chapter": {
+      "content": ".widget-episodeBody",
+      "filter": ["@a"]
   },
   "search": {
     "link": "https://kakuyomu.jp/search?q=${key}&order=popular",

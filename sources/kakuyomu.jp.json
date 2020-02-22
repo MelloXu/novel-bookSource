@@ -1,10 +1,8 @@
 {
   "name": "カクヨム",
-  "version": 100,
-  "category": 2,
   "url": "https://kakuyomu.jp",
-  "charset": "utf-8",
-  "metadata": {
+  "version": 100,
+  "detail": {
     "name": ["a.widget-workCard-titleLabel"],
     "author": ["a.widget-workCard-authorLabel"],
     "cover": ["#coverImage img@attr->src"],

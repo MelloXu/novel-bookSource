@@ -17,13 +17,12 @@
     "summary": "#catchphrase-body",
     "cover": "#coverImage img",
     "status": ".widget-toc-workStatus",
-    "catalog": "#workGenre",
     "update": ".widget-toc-date span"
   },
   "catalog": {
-      "list": ".widget-toc-main",
+      "list": ".widget-toc-episode",
       "orderBy": 0,
-      "name": ".widget-toc-episode .widget-toc-episode-titleLabel",
+      "name": ".widget-toc-episode span",
       "chapter": ".widget-toc-episode a"
   },
   "chapter": {

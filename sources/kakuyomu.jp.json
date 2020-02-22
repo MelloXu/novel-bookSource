@@ -16,8 +16,6 @@
     "author": "#workAuthor-activityName",
     "summary": "#catchphrase-body",
     "cover": "#coverImage img",
-    "status": ".widget-toc-workStatus",
-    "update": ".widget-toc-date span"
   },
   "catalog": {
       "list": ".widget-toc-episode",

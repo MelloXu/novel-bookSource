@@ -7,7 +7,7 @@
       "charset": "utf-8",
       "list": ".searchkekka_box",
       "name": ".novel_h > a",
-      "author": ".novel_h > div > a:nth-child(1) ",
+      "author": ".searchkekka_box > a:nth-child(1) ",
       "detail": ".novel_h > a"
   },
   "detail": {

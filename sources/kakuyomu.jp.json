@@ -18,8 +18,7 @@
     "cover": "#coverImage img",
     "status": ".widget-toc-workStatus",
     "catalog": "#workGenre",
-    "update": ".widget-toc-date span",
-    "lastChapter": ".widget-toc-episode:last-child .widget-toc-episode-titleLabel"
+    "update": ".widget-toc-date span"
   },
   "catalog": {
       "list": ".widget-toc-episode",

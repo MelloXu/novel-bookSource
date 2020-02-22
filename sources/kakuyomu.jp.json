@@ -15,7 +15,7 @@
     "name": "#workTitle",
     "author": "#workAuthor-activityName",
     "summary": "#catchphrase-body",
-    "cover": "#coverImage img",
+    "cover": "#coverImage img"
   },
   "catalog": {
       "list": ".widget-toc-episode",

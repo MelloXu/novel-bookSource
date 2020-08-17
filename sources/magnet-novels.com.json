@@ -3,12 +3,12 @@
   "url": "magnet-novels.com",
   "version": 100,
   "search": {
-      "url": "https://www.magnet-novels.com/search?q=${key}",
+      "url": "https://www.magnet-novels.com/api/novel/searchNovels@post->keyword=${key}&size=20&order_by='latest_update_time'&sort='desc'",
       "charset": "utf-8",
       "list": "$.data.data[*]",
       "name": "$.data.data[*].name",
       "author": "$.data.data[*].author.name",
-      "detail": "https://www.magnet-novels.com/novels/${$.data.data[*].id}",
+      "detail": "/novels/${$.data.data[*].id}",
       "summary": "$.data.data[*].synopsis"
   },
   "detail": {

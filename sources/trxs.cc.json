@@ -18,7 +18,7 @@
     "cover": ".pic img"
   },
   "catalog": {
-      "list": ".book_list ul",
+      "list": ".book_list",
       "orderBy": 0,
       "name": ".book_list li",
       "chapter": ".book_list li a"
@@ -37,7 +37,7 @@
           "author": ".bk .booknews",
           "cover": ".bk .pic img",
           "summary": ".bk .infos p",
-          "detail": "https://www.trxs.cc/tongren/4389.html"
+          "detail": ".bk a"
       }
   ]
 }

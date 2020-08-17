@@ -34,7 +34,7 @@
           "url": "https://www.magnet-novels.com/api/web/v2/get24hHotNovels@post->genre=1&page=1",
           "page": 1,
           "size": 10,
-          "list": "$..",
+          "list": "$..data[*]",
           "name": "$..name",
           "author": "$..author.name",
           "cover": "$..cover_url",

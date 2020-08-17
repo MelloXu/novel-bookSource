@@ -4,7 +4,7 @@
   "version": 100,
   "search": {
       "url": "https://www.trxs.cc/e/search/result/?searchid=${key}",
-      "charset": "utf-8",
+      "charset": "gb2312",
       "list": "div.bk",
       "name": "div.bk h3",
       "author": "div.bk .booknews",

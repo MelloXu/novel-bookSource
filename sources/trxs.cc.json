@@ -24,7 +24,7 @@
       "chapter": ".book_list li a"
   },
   "chapter": {
-      "content": ".readDetail"
+      "content": ".read_chapterDetail"
   },
   "rank": [
       {

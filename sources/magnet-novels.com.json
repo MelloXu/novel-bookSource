@@ -35,7 +35,7 @@
           "page": 1,
           "size": 10,
           "list": "$..data[*]",
-          "name": "$.name",
+          "name": "$..data[*].name",
           "author": "$.author.name",
           "cover": "$.cover_url",
           "detail": "https://www.magnet-novels.com/novels/${$.data.data[*].id}"

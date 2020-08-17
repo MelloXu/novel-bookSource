@@ -32,7 +32,7 @@
           "url": "https://www.trxs.cc/tags-150-0.html",
           "page": 1,
           "size": 20,
-          "list": ".books",
+          "list": ".books .bk",
           "name": ".bk .infos h3",
           "author": ".bk .booknews",
           "summary": ".bk .infos p",

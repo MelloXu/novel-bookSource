@@ -12,7 +12,7 @@
       "summary": "div.bk p"
   },
   "detail": {
-    "name": ".infos p",
+    "name": ".infos h1",
     "author": ".infos .date a",
     "summary": ".infos p",
     "cover": ".pic img"
@@ -37,7 +37,7 @@
           "author": ".bk .booknews",
           "cover": ".bk .pic img",
           "summary": ".bk .infos p",
-          "detail": ".bk a"
+          "detail": "https://www.trxs.cc/tongren/4389.html"
       }
   ]
 }

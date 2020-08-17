@@ -35,6 +35,7 @@
           "list": ".books .bk",
           "name": ".bk .infos h3",
           "author": ".bk .booknews",
+          "cover": ".bk .pic img",
           "summary": ".bk .infos p",
           "detail": ".bk a"
       }

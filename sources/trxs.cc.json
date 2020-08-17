@@ -18,7 +18,7 @@
     "cover": ".pic img"
   },
   "catalog": {
-      "list": ".book_list",
+      "list": ".book_list .clearfix",
       "orderBy": 0,
       "name": ".book_list li a",
       "chapter": ".book_list li a"

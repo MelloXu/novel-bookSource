@@ -5,22 +5,24 @@
   "search": {
       "url": "https://www.magnet-novels.com/search?q=${key}",
       "charset": "utf-8",
-      "list": "div.bk",
-      "name": "div.bk h3",
-      "author": "div.bk .booknews",
-      "detail": "div.bk h3 a",
-      "summary": "div.bk p"
+      "list": "$.data.data[*]",
+      "name": "$.data.data[*].name",
+      "author": "$.data.data[*].author.name",
+      "detail": "https://www.magnet-novels.com/novels/${$.data.data[*].id}",
+      "summary": "$.data.data[*].synopsis"
   },
   "detail": {
-    "name": ".infos h1",
-    "author": ".infos .date a",
-    "summary": ".infos p",
-    "cover": ".pic img"
+    "name": "$.data.name",
+    "author": "$.data.author.name",
+    "summary": "$.data.synopsis",
+    "cover": "$.data.cover_url",
+    "update": "$.data.last_section.latest_public_time",
+    "lastChapter": "$.data.last_section.title"
   },
   "catalog": {
-      "list": ".book_list .clearfix",
+      "list": "$.data[*]",
       "orderBy": 0,
-      "name": ".book_list li a",
+      "name": "$.data[*].title",
       "chapter": ".book_list li a"
   },
   "chapter": {

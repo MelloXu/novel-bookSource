@@ -1,9 +1,9 @@
 {
-  "name": "同人小说网",
+  "name": "MAGNET MACROLINK",
   "url": "trxs.cc",
   "version": 100,
   "search": {
-      "url": "https://www.trxs.cc/e/search/result/?searchid=${key}",
+      "url": "https://www.magnet-novels.com/search?q=${key}",
       "charset": "utf-8",
       "list": "div.bk",
       "name": "div.bk h3",
@@ -28,16 +28,15 @@
   },
   "rank": [
       {
-          "title": "全本同人小说",
-          "url": "https://www.trxs.cc/tags-150-0.html",
+          "title": "公式連載",
+          "url": "https://www.magnet-novels.com/api/web/v2/getVipNovels",
           "page": 1,
-          "size": 20,
-          "list": ".books .bk",
-          "name": ".bk .infos h3",
-          "author": ".bk .booknews",
-          "cover": ".bk .pic img",
-          "summary": ".bk .infos p",
-          "detail": ".bk a"
+          "size": 10,
+          "list": "$.data.data[*]",
+          "name": "$.data.data[*].name",
+          "author": "$.data.data[*].author.name",
+          "cover": "$.data.data[*].cover_url",
+          "detail": "https://www.magnet-novels.com/novels/${$.data.data[*].id}"
       }
   ]
 }

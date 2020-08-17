@@ -12,7 +12,7 @@
       "summary": "div.bk p"
   },
   "detail": {
-    "name": ".infos h1",
+    "name": ".infos p",
     "author": ".infos .date a",
     "summary": ".infos p",
     "cover": ".pic img"

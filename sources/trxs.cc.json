@@ -7,7 +7,7 @@
       "charset": "utf-8",
       "list": "div.bk",
       "name": "div.bk h3",
-      "author": "div.bk .booknews@match->( +)(?= )",
+      "author": "div.bk .booknews",
       "detail": "div.bk h3 a",
       "summary": "div.bk p"
   },
@@ -25,5 +25,18 @@
   },
   "chapter": {
       "content": ".widget-episode"
-  }
+  },
+  "rank": [
+      {
+          "title": "全本同人小说",
+          "url": "https://www.trxs.cc/tags-150-0.html",
+          "page": 1,
+          "size": 20,
+          "list": ".books",
+          "name": ".bk .infos h3",
+          "author": ".bk .booknews",
+          "summary": ".bk .infos p",
+          "detail": ".bk a"
+      }
+  ]
 }

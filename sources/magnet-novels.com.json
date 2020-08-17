@@ -28,10 +28,11 @@
   },
   "rank": [
       {
-          "title": "公式連載",
-          "url": "https://www.magnet-novels.com/api/web/v2/getVipNovels",
+          "title": "ジャンル",
+          "url": "https://www.magnet-novels.com/genre/${key}",
           "page": 1,
           "size": 10,
+          "categories": [{"key": "fantasy", "value": "ファンタジー"}, {"key": "love", "value": "恋愛"}],
           "list": "$.data.data[*]",
           "name": "$.data.data[*].name",
           "author": "$.data.data[*].author.name",

@@ -1,0 +1,29 @@
+{
+  "name": "同人小说网",
+  "url": "trxs.cc",
+  "version": 100,
+  "search": {
+      "url": "https://www.trxs.cc/e/search/result/?searchid=${key}",
+      "charset": "utf-8",
+      "list": "div.bk",
+      "name": "div.bk h3",
+      "author": "div.bk .booknews@match->( +)(?= )",
+      "detail": "div.bk h3 a",
+      "summary": "div.bk p"
+  },
+  "detail": {
+    "name": ".infos h1",
+    "author": "#workAuthor-activityName",
+    "summary": "#catchphrase-body",
+    "cover": "#coverImage img"
+  },
+  "catalog": {
+      "list": ".widget-toc-episode",
+      "orderBy": 0,
+      "name": ".widget-toc-episode span",
+      "chapter": ".widget-toc-episode a"
+  },
+  "chapter": {
+      "content": ".widget-episode"
+  }
+}

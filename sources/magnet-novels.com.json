@@ -36,7 +36,7 @@
           "page": 1,
           "size": 10,
           "list": "$..data[*]",
-          "name": "$.name",
+          "name": "$.data.data[:1].name",
           "author": "$.author.name",
           "cover": "$.cover_url",
           "detail": "/novels/${$.id}"

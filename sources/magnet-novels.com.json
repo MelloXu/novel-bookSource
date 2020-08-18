@@ -35,8 +35,8 @@
           "categories": [{"key": "1", "value": "ファンタジー"}, {"key": "2", "value": "恋愛"}],
           "page": 1,
           "size": 10,
-          "list": "$..data",
-          "name": "$..name",
+          "list": "$..data[*]",
+          "name": "1",
           "author": "$..author.name",
           "cover": "$..cover_url",
           "detail": "/novels/${$.id}"

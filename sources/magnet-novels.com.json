@@ -2,7 +2,32 @@
   "name": "MAGNET MACROLINK",
   "url": "magnet-novels.com",
   "version": 100,
-
+  "search": {
+      "url": "https://www.magnet-novels.com/api/novel/searchNovels@post->keyword=${key}&size=20",
+      "charset": "utf-8",
+      "list": "$..data[*]",
+      "name": "$.name",
+      "author": "$.author.name",
+      "detail": "/novels/${$.id}",
+      "summary": "$.synopsis"
+  },
+  "detail": {
+    "name": "$.data.name",
+    "author": "$.data.author.name",
+    "summary": "$.data.synopsis",
+    "cover": "$.data.cover_url",
+    "update": "$.data.last_section.latest_public_time",
+    "lastChapter": "$.data.last_section.title"
+  },
+  "catalog": {
+      "list": "$.data[*]",
+      "orderBy": 0,
+      "name": "$.data[*].title",
+      "chapter": ".book_list li a"
+  },
+  "chapter": {
+      "content": ".read_chapterDetail"
+  },
   "rank": [
       {
           "title": "ジャンル",
@@ -10,11 +35,11 @@
           "categories": [{"key": "1", "value": "ファンタジー"}, {"key": "2", "value": "恋愛"}],
           "page": 1,
           "size": 10,
-          "list": "$..data[*]",
-          "name": "$.name",
-          "author": "$.author.name",
-          "cover": "$.cover_url",
-          "detail": "/novels/${$.id}"
+          "list": "$.data.data",
+          "name": "$.data.data.name",
+          "author": "$.data.data.author.name",
+          "cover": "$.data.data.cover_url",
+          "detail": "/novels/${$.data.data.id}"
       }
   ]
 }

@@ -33,7 +33,7 @@
       {
           "title": "ジャンル",
           "url": "https://www.magnet-novels.com/api/web/v2/get24hHotNovels@post->genre=${key}&page=${page}",
-          "categories": [{"key": "1", "value": "ファンタジー"}, {"key": "2", "value": "恋愛"}],
+          "categories": [{"key": "1", "value": "ファンタジー"}, {"key": "2", "value": "恋愛"}, {"key": "3", "value": "ミステリー"}, {"key": "4", "value": "ホラー"}, {"key": "5", "value": "SF"}, {"key": "6", "value": "エッセイ"}, {"key": "7", "value": "歴史"}, {"key": "8", "value": "現代"}, {"key": "9", "value": "VRMMO"}, {"key": "10", "value": "その他文芸"}],
           "page": 1,
           "list": "$.data.data[*]",
           "name": "$.name",

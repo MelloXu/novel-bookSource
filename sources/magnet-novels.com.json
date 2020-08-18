@@ -36,9 +36,9 @@
           "page": 1,
           "size": 10,
           "list": "$.data.data",
-          "name": "$.data.data.name",
-          "author": "$.data.data.author.name",
-          "cover": "$.data.data.cover_url",
+          "name": "$..name",
+          "author": "$..author.name",
+          "cover": "$..cover_url",
           "detail": "/novels/${$.data.data.id}"
       }
   ]

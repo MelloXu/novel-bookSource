@@ -2,7 +2,15 @@
   "name": "MAGNET MACROLINK",
   "url": "magnet-novels.com",
   "version": 100,
- 
+  "search": {
+      "url": "https://www.magnet-novels.com/api/novel/searchNovels@post->keyword=${key}&size=20",
+      "charset": "utf-8",
+      "list": "$..data[*]",
+      "name": "$.name",
+      "author": "$.author.name",
+      "detail": "/novels/${$.id}",
+      "summary": "$.synopsis"
+  },
   "detail": {
     "name": "$.data.name",
     "author": "$.data.author.name",
@@ -22,14 +30,16 @@
   },
   "rank": [
       {
-          "title": "ファンタジー",
-          "url": "https://www.magnet-novels.com/api/web/v2/get24hHotNovels@post->genre=1&page=1",
+          "title": "ジャンル",
+          "url": "https://www.magnet-novels.com/api/web/v2/get24hHotNovels@post->genre=${key}&page=1",
+          "categories": [{"key": "1", "value": "ファンタジー"}, {"key": "2", "value": "恋愛"}],
           "page": 1,
           "size": 10,
           "list": "$..data[*]",
           "name": "$.name",
           "author": "$.author.name",
-          "cover": "$.cover_url"
+          "cover": "$.cover_url",
+          "detail": "https://www.magnet-novels.com/novels/${$.id}"
       }
   ]
 }

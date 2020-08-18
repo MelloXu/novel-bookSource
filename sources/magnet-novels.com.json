@@ -39,7 +39,7 @@
           "name": "$.name",
           "author": "$.author.name",
           "cover": "$.cover_url",
-          "detail": "https://www.magnet-novels.com/novels/${$.id}"
+          "detail": "/novels/${$.id}"
       }
   ]
 }

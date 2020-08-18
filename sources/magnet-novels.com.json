@@ -11,9 +11,9 @@
           "page": 1,
           "size": 10,
           "list": "$..data[*]",
-          "name": "$..name",
-          "author": "$..author.name",
-          "cover": "$..cover_url",
+          "name": "$.name",
+          "author": "$.author.name",
+          "cover": "$.cover_url",
           "detail": "/novels/${$.id}"
       }
   ]

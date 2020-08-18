@@ -5,10 +5,10 @@
   "search": {
       "url": "https://www.magnet-novels.com/api/novel/searchNovels@post->keyword=${key}&size=20",
       "charset": "utf-8",
-      "list": "$..data[*]",
+      "list": "$.data.data[*]",
       "name": "$.name",
       "author": "$.author.name",
-      "detail": "/novels/${$.id}",
+      "detail": "https://www.magnet-novels.com/api/novel/reader/getNovelInfo@post->novel_id=${$.id}",
       "summary": "$.synopsis"
   },
   "detail": {
@@ -17,16 +17,17 @@
     "summary": "$.data.synopsis",
     "cover": "$.data.cover_url",
     "update": "$.data.last_section.latest_public_time",
-    "lastChapter": "$.data.last_section.title"
+    "lastChapter": "$.data.last_section.title",
+    "catalog": "https://www.magnet-novels.com/api/web/v2/reader/getNovelContents@post->novel_id=${$.data.id}"
   },
   "catalog": {
       "list": "$.data[*]",
       "orderBy": 0,
-      "name": "$.data[*].title",
-      "chapter": ".book_list li a"
+      "name": "$.title",
+      "chapter": "https://www.magnet-novels.com/api/web/v2/reader/getNovelSection@post->novel_id=${$.novel_id}&section_id=${$.id}"
   },
   "chapter": {
-      "content": ".read_chapterDetail"
+      "content": "$.data.content_html"
   },
   "rank": [
       {
@@ -39,7 +40,7 @@
           "name": "$.name",
           "author": "$.author.name",
           "cover": "$.cover_url",
-          "detail": "/novels/${$.id}"
+          "detail": "https://www.magnet-novels.com/api/novel/reader/getNovelInfo@post->novel_id=${$.id}"
       }
   ]
 }
